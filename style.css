@@ -1,0 +1,102 @@
+:root {
+  --clicker-background: rgb(173, 173, 173);
+  --sky: #2255d5;
+  --earth: #1CBE2C;
+  --shop: #BD8800;
+}
+
+body.debug .container,
+body.debug .container-fluid {
+  outline: 2px double blue;
+  outline-offset: -2px;
+}
+
+body.debug .row {
+  outline: 2px dashed red;
+  outline-offset: -2px;
+}
+
+body.debug [class*="col-"] {
+  outline: 2px dotted forestgreen;
+  outline-offset: -3px;
+}
+
+.resource-container {
+  max-height: 30vh;
+}
+
+.click-image {
+  max-width: 98px;
+  height: auto;
+  object-fit: scale-down;
+  border-radius: 100%;
+  border: 3px solid black;
+}
+
+.clickable-area {
+  height: 30vh;
+}
+
+.bg-color-secondary {
+  background-color: var(--clicker-background)
+}
+
+.bg-color-sky {
+  background-color: var(--sky)
+}
+
+.sky {
+  position: relative;
+  height: 30vh;
+}
+
+.bg-color-earth {
+  background-color: var(--earth);
+}
+
+.earth {
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+}
+
+.p1-castle {
+  position: absolute;
+  bottom: 10vh;
+  left: 20vh;
+}
+
+.p2-castle {
+  position: absolute;
+  bottom: 10vh;
+  right: 20vh;
+}
+
+.bg-color-shop {
+  background-color: var(--shop);
+}
+
+.shop {
+  height: 40vh;
+}
+
+.worker-panel {
+  background-color: var(--clicker-background)
+}
+
+.mouse-panel {
+  background-color: var(--clicker-background)
+}
+
+.cursor-help {
+  cursor: help;
+}
+
+.job-stats {
+  min-height: 10rem;
+  max-height: 15rem;
+}
+
+.mouse-upgrade {
+  background-color: rgb(221, 221, 221);
+}
